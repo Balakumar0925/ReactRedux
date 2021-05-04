@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  text-align: center;
+}
+ 
+.Navbar-header {
+  text-align: center;
+  padding: 15px;
+}
+   
+  .buttonclass {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #544;
+    margin: 10px 20px;
+  }
+
+  .buttonclass1 {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #544;
+    margin: 10px 20px;
+    display: inline;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:coral;
+    color: white;
+    text-align: center;
+ }
+
+ .navbar-brand {
+   color: red
+ }
+
+ .Navbar.Brand {
+   color: red;
+ }
+
