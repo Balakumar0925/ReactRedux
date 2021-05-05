@@ -84,7 +84,7 @@ function App() {
   return (
         <div>
         <header className="head">
-        <nav class="navbar navbar-dark bg-red">
+        <nav class="d-flex p-4 justify-content-center" >
             TODO APP
            </nav>
            </header>
@@ -127,28 +127,25 @@ function App() {
            })}
           </tbody>
           </Table>  
-            
-            <Button className="buttonclass" onClick={function(){
-            store.dispatch({
-              "type":"todo/add",
-              "payload":Handle()
-            })
-            store.dispatch({
-              "type":"todo/addbook",
-              "payload":""
-            })
-          }}>ADD TASK</Button>
-
-          <Button className="buttonclass1" onClick={function(){
-            var sprompt = prompt("Enter a topic name to be searched on Google API book store")
-            store.dispatch({
-              type: "GoogleAPI",
-              payload: sprompt
-            })
-          }}>Add Book from Google API</Button>
-            
-            
-            <Button onClick={function(){
+            <div className="row justify-content-md-center">
+               <Button className="buttonclass" onClick={function(){
+                   store.dispatch({
+                     "type":"todo/add",
+                      "payload":Handle()
+                     })
+                   store.dispatch({
+                      "type":"todo/addbook",
+                     "payload":""
+                    })
+                }}>ADD TASK</Button>
+                <Button className="buttonclass1" onClick={function(){
+                      var sprompt = prompt("Enter a topic name to be searched on Google API book store")
+                       store.dispatch({
+                           type: "GoogleAPI",
+                           payload: sprompt
+                        })
+                }}>Add Book from Google API</Button>
+             <Button className="change" onClick={function(){
               //alert('hi');
               //alert('inside button' + document.getElementById('taskStatus1').getAttribute('data-value'));
               //alert(document.getElementById('taskStatus1').getAttribute('data-value'))
@@ -164,6 +161,8 @@ function App() {
                   "payload": value.id
                 })
               })}}>Change TaskStatus</Button>
+
+         </div>
             
         </div> 
   );

@@ -36,8 +36,9 @@
     transform: rotate(360deg);
   }
 }
-.header{
+.head{
   text-align: center;
+  text-size-adjust: 2px;
 }
  
 .Navbar-header {
@@ -53,6 +54,13 @@
   }
 
   .buttonclass1 {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #544;
+    margin: 10px 20px;
+    display: inline;
+  }
+  .change {
     text-align: center;
     cursor: pointer;
     border: 1px solid #544;
